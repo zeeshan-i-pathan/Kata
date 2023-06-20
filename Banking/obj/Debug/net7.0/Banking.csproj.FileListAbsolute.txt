@@ -1,0 +1,12 @@
+/Users/FWD/Projects/Kata/Banking/bin/Debug/net7.0/Banking.deps.json
+/Users/FWD/Projects/Kata/Banking/bin/Debug/net7.0/Banking.dll
+/Users/FWD/Projects/Kata/Banking/bin/Debug/net7.0/Banking.pdb
+/Users/FWD/Projects/Kata/Banking/obj/Debug/net7.0/Banking.csproj.AssemblyReference.cache
+/Users/FWD/Projects/Kata/Banking/obj/Debug/net7.0/Banking.GeneratedMSBuildEditorConfig.editorconfig
+/Users/FWD/Projects/Kata/Banking/obj/Debug/net7.0/Banking.AssemblyInfoInputs.cache
+/Users/FWD/Projects/Kata/Banking/obj/Debug/net7.0/Banking.AssemblyInfo.cs
+/Users/FWD/Projects/Kata/Banking/obj/Debug/net7.0/Banking.csproj.CoreCompileInputs.cache
+/Users/FWD/Projects/Kata/Banking/obj/Debug/net7.0/Banking.dll
+/Users/FWD/Projects/Kata/Banking/obj/Debug/net7.0/refint/Banking.dll
+/Users/FWD/Projects/Kata/Banking/obj/Debug/net7.0/Banking.pdb
+/Users/FWD/Projects/Kata/Banking/obj/Debug/net7.0/ref/Banking.dll

@@ -1,0 +1,12 @@
+/Users/FWD/Projects/Kata/BusDriver/bin/Debug/net7.0/BusDriver.deps.json
+/Users/FWD/Projects/Kata/BusDriver/bin/Debug/net7.0/BusDriver.dll
+/Users/FWD/Projects/Kata/BusDriver/bin/Debug/net7.0/BusDriver.pdb
+/Users/FWD/Projects/Kata/BusDriver/obj/Debug/net7.0/BusDriver.csproj.AssemblyReference.cache
+/Users/FWD/Projects/Kata/BusDriver/obj/Debug/net7.0/BusDriver.GeneratedMSBuildEditorConfig.editorconfig
+/Users/FWD/Projects/Kata/BusDriver/obj/Debug/net7.0/BusDriver.AssemblyInfoInputs.cache
+/Users/FWD/Projects/Kata/BusDriver/obj/Debug/net7.0/BusDriver.AssemblyInfo.cs
+/Users/FWD/Projects/Kata/BusDriver/obj/Debug/net7.0/BusDriver.csproj.CoreCompileInputs.cache
+/Users/FWD/Projects/Kata/BusDriver/obj/Debug/net7.0/BusDriver.dll
+/Users/FWD/Projects/Kata/BusDriver/obj/Debug/net7.0/refint/BusDriver.dll
+/Users/FWD/Projects/Kata/BusDriver/obj/Debug/net7.0/BusDriver.pdb
+/Users/FWD/Projects/Kata/BusDriver/obj/Debug/net7.0/ref/BusDriver.dll

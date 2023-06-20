@@ -1,0 +1,43 @@
+﻿<Properties StartupConfiguration="{D1C20587-404B-4C3C-A726-4C3CE52F3C48}|Default">
+  <MonoDevelop.Ide.ItemProperties.BusDriver.Test PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Banking.Test/AccountWithdrawalSteps.cs">
+    <Files>
+      <File FileName="Banking/Dto/WithdrawalResponse.cs" Line="15" Column="1" IsPinned="True" />
+      <File FileName="Banking/Services/WithdrawalService.cs" Line="19" Column="20" />
+      <File FileName="Banking/VO/DepositRequest.css" Line="4" Column="68" />
+      <File FileName="Banking/VO/WithdrawalRequest.cs" Line="1" Column="1" />
+      <File FileName="Banking/Models/Account.cs" Line="1" Column="1" />
+      <File FileName="Banking/Services/IWithdrawalService.cs" Line="10" Column="12" />
+      <File FileName="Banking/Services/DepositService.cs" Line="18" Column="10" />
+      <File FileName="Banking.Test/AccountWithdrawalSteps.cs" Line="59" Column="21" />
+      <File FileName="Banking.Test/AccountWithdrawal.feature.cs" Line="1" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Kata" expanded="True">
+            <Node name="Banking" expanded="True">
+              <Node name="Dto" expanded="True" />
+              <Node name="Models" expanded="True" />
+              <Node name="Services" expanded="True" />
+              <Node name="VO" expanded="True" />
+            </Node>
+            <Node name="Banking.Test" expanded="True" />
+            <Node name="BusDriver" expanded="True" />
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.UnitTesting.TestPad">
+        <State name="__root__">
+          <Node name="Kata" expanded="True" />
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+</Properties>
