@@ -10,9 +10,9 @@ public enum AccountType
 public class Account
 {
     public uint Id { get; set; }
-    public uint AccountNum { get; set; }
-    public uint SortCode { get; set; }
-    public AccountType AccountType { get; set; } = AccountType.Savings;
+    public string AccountNum { get; set; }
+    public string SortCode { get; set; }
+    // public AccountType AccountType { get; set; } = AccountType.Savings;
     public double Balance { get; set; }
 }
 

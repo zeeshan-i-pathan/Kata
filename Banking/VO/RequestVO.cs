@@ -1,6 +1,10 @@
 ﻿using System;
-namespace Banking.VO
+namespace Banking.VO;
+
+public class RequestVO : BaseVO
 {
-    public record RequestVO(uint AccountId, float Amount): IRequest;
+    public RequestVO(uint AccountId, float Amount) : base(AccountId, Amount)
+    {
+    }
 }
 
