@@ -14,5 +14,6 @@ public class Account
     public string SortCode { get; set; }
     // public AccountType AccountType { get; set; } = AccountType.Savings;
     public double Balance { get; set; }
+    public List<Transaction> Transactions { get; set; } = new List<Transaction>();
 }
 

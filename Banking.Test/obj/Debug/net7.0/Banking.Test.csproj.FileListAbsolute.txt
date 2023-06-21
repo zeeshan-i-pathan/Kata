@@ -113,3 +113,14 @@
 /Users/FWD/Projects/Kata/Banking.Test/obj/Debug/net7.0/Banking.Test.pdb
 /Users/FWD/Projects/Kata/Banking.Test/obj/Debug/net7.0/Banking.Test.genruntimeconfig.cache
 /Users/FWD/Projects/Kata/Banking.Test/obj/Debug/net7.0/ref/Banking.Test.dll
+/Users/FWD/Projects/Kata/Banking.Test/bin/Debug/net7.0/Microsoft.EntityFrameworkCore.dll
+/Users/FWD/Projects/Kata/Banking.Test/bin/Debug/net7.0/Microsoft.EntityFrameworkCore.Abstractions.dll
+/Users/FWD/Projects/Kata/Banking.Test/bin/Debug/net7.0/Microsoft.Extensions.Caching.Abstractions.dll
+/Users/FWD/Projects/Kata/Banking.Test/bin/Debug/net7.0/Microsoft.Extensions.Caching.Memory.dll
+/Users/FWD/Projects/Kata/Banking.Test/bin/Debug/net7.0/Microsoft.Extensions.DependencyInjection.dll
+/Users/FWD/Projects/Kata/Banking.Test/bin/Debug/net7.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll
+/Users/FWD/Projects/Kata/Banking.Test/bin/Debug/net7.0/Microsoft.Extensions.Logging.dll
+/Users/FWD/Projects/Kata/Banking.Test/bin/Debug/net7.0/Microsoft.Extensions.Logging.Abstractions.dll
+/Users/FWD/Projects/Kata/Banking.Test/bin/Debug/net7.0/Microsoft.Extensions.Options.dll
+/Users/FWD/Projects/Kata/Banking.Test/bin/Debug/net7.0/Microsoft.Extensions.Primitives.dll
+/Users/FWD/Projects/Kata/Banking.Test/bin/Debug/net7.0/Microsoft.EntityFrameworkCore.InMemory.dll

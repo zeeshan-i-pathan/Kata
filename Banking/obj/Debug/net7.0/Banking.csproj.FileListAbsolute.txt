@@ -10,3 +10,5 @@
 /Users/FWD/Projects/Kata/Banking/obj/Debug/net7.0/refint/Banking.dll
 /Users/FWD/Projects/Kata/Banking/obj/Debug/net7.0/Banking.pdb
 /Users/FWD/Projects/Kata/Banking/obj/Debug/net7.0/ref/Banking.dll
+/Users/FWD/Projects/Kata/Banking/bin/Debug/net7.0/Banking.runtimeconfig.json
+/Users/FWD/Projects/Kata/Banking/obj/Debug/net7.0/Banking.genruntimeconfig.cache

@@ -1,8 +1,29 @@
 {
   "version": 2,
-  "dgSpecHash": "5fcXSgxZl8IguZV+2kLufv4XCzvk6QzRsGOK2DPHzx/dC/g0hnQTS7cITlV9TiB0VezjeLwpd+R31CjAWDUGDw==",
+  "dgSpecHash": "wNnsIvIWwXsHWHMg0IDs0HYNjkUUybHlgN4qI6u/Jw2I91lsc7XHt51fCqHImhzqI3q4psdQjPuPCUicBlXNlg==",
   "success": true,
   "projectFilePath": "/Users/FWD/Projects/Kata/Banking/Banking.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "/Users/FWD/.nuget/packages/humanizer.core/2.14.1/humanizer.core.2.14.1.nupkg.sha512",
+    "/Users/FWD/.nuget/packages/microsoft.entityframeworkcore/7.0.7/microsoft.entityframeworkcore.7.0.7.nupkg.sha512",
+    "/Users/FWD/.nuget/packages/microsoft.entityframeworkcore.abstractions/7.0.7/microsoft.entityframeworkcore.abstractions.7.0.7.nupkg.sha512",
+    "/Users/FWD/.nuget/packages/microsoft.entityframeworkcore.analyzers/7.0.7/microsoft.entityframeworkcore.analyzers.7.0.7.nupkg.sha512",
+    "/Users/FWD/.nuget/packages/microsoft.entityframeworkcore.design/7.0.7/microsoft.entityframeworkcore.design.7.0.7.nupkg.sha512",
+    "/Users/FWD/.nuget/packages/microsoft.entityframeworkcore.relational/7.0.7/microsoft.entityframeworkcore.relational.7.0.7.nupkg.sha512",
+    "/Users/FWD/.nuget/packages/microsoft.extensions.caching.abstractions/7.0.0/microsoft.extensions.caching.abstractions.7.0.0.nupkg.sha512",
+    "/Users/FWD/.nuget/packages/microsoft.extensions.caching.memory/7.0.0/microsoft.extensions.caching.memory.7.0.0.nupkg.sha512",
+    "/Users/FWD/.nuget/packages/microsoft.extensions.configuration.abstractions/7.0.0/microsoft.extensions.configuration.abstractions.7.0.0.nupkg.sha512",
+    "/Users/FWD/.nuget/packages/microsoft.extensions.dependencyinjection/7.0.0/microsoft.extensions.dependencyinjection.7.0.0.nupkg.sha512",
+    "/Users/FWD/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/7.0.0/microsoft.extensions.dependencyinjection.abstractions.7.0.0.nupkg.sha512",
+    "/Users/FWD/.nuget/packages/microsoft.extensions.dependencymodel/7.0.0/microsoft.extensions.dependencymodel.7.0.0.nupkg.sha512",
+    "/Users/FWD/.nuget/packages/microsoft.extensions.logging/7.0.0/microsoft.extensions.logging.7.0.0.nupkg.sha512",
+    "/Users/FWD/.nuget/packages/microsoft.extensions.logging.abstractions/7.0.0/microsoft.extensions.logging.abstractions.7.0.0.nupkg.sha512",
+    "/Users/FWD/.nuget/packages/microsoft.extensions.options/7.0.0/microsoft.extensions.options.7.0.0.nupkg.sha512",
+    "/Users/FWD/.nuget/packages/microsoft.extensions.primitives/7.0.0/microsoft.extensions.primitives.7.0.0.nupkg.sha512",
+    "/Users/FWD/.nuget/packages/mono.texttemplating/2.2.1/mono.texttemplating.2.2.1.nupkg.sha512",
+    "/Users/FWD/.nuget/packages/system.codedom/4.4.0/system.codedom.4.4.0.nupkg.sha512",
+    "/Users/FWD/.nuget/packages/system.text.encodings.web/7.0.0/system.text.encodings.web.7.0.0.nupkg.sha512",
+    "/Users/FWD/.nuget/packages/system.text.json/7.0.0/system.text.json.7.0.0.nupkg.sha512"
+  ],
   "logs": []
 }

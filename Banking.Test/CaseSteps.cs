@@ -8,6 +8,8 @@ using Banking.Dto;
 using BoDi;
 using static System.Runtime.InteropServices.JavaScript.JSType;
 using TechTalk.SpecFlow.Assist;
+using Banking.DAL;
+using System.Security.Principal;
 
 namespace Banking.Test
 {
@@ -71,6 +73,7 @@ namespace Banking.Test
         {
             var accounts = table.CreateSet<Account>();
             objectContainer.Resolve<List<Account>>().AddRange(accounts);
+            Console.WriteLine("Could resolve");
         }
 
 
@@ -83,7 +86,7 @@ namespace Banking.Test
             Account? toAccount = objectContainer
                                     .Resolve<List<Account>>()
                                     .Find(account => account.Id == p2);
-            if (fromAccount!= null && toAccount != null && toAccount.AccountNum != null && toAccount.SortCode != null)
+            if (fromAccount != null && toAccount != null && toAccount.AccountNum != null && toAccount.SortCode != null)
             {
                 TransferRequestVO transferRequest = new TransferRequestVO(
                     AccountId: fromAccount.Id,
@@ -101,6 +104,60 @@ namespace Banking.Test
         {
             Account? account = objectContainer.Resolve<List<Account>>().Find(account => account.Id == p0);
             account?.Balance.Should().Be(p1);
+        }
+
+        [Given(@"account details in DB")]
+        public void GivenAccountDetailsInDB(Table table)
+        {
+            IEnumerable<Account> accounts = table.CreateSet<Account>();
+            UnitOfWork unitOfWork = this.objectContainer.Resolve<UnitOfWork>();
+            foreach (Account account in accounts)
+            {
+                unitOfWork.AccountRepository.Insert(account);
+            }
+            unitOfWork.Save();
+        }
+
+        [Then(@"the DB should have (.*) records")]
+        public async void ThenTheDBShouldHaveRecords(int p0)
+        {
+            UnitOfWork unitOfWork = this.objectContainer.Resolve<UnitOfWork>();
+            var ats = await unitOfWork.AccountRepository.Get();
+            ats.Count().Should().Be(p0);
+        }
+
+        [When(@"I withdraw (.*)")]
+        public void WhenIWithdraw(int p0)
+        {
+            //_scenarioContext.Pending();
+        }
+
+        [When(@"deposit (.*)")]
+        public void WhenDeposit(int p0)
+        {
+            //_scenarioContext.Pending();
+        }
+
+        [When(@"I transfer (.*) from my account to account (.*)")]
+        public void WhenITransferFromMyAccountToAccount(int p0, int p1)
+        {
+            //_scenarioContext.Pending();
+        }
+
+        [Then(@"my account balance should be (.*)")]
+        public async void ThenMyAccountBalanceShouldBe(int p0)
+        {
+            UnitOfWork unitOfWork = objectContainer.Resolve<UnitOfWork>();
+            Account account = await unitOfWork.AccountRepository.GetByID((uint)1);
+            account.Balance.Should().Be(p0);
+        }
+
+        [Then(@"I should have (.*) transactions")]
+        public async void ThenIShouldHaveTransactions(int p0)
+        {
+            UnitOfWork unitOfWork = objectContainer.Resolve<UnitOfWork>();
+            Account account = await unitOfWork.AccountRepository.GetByID((uint)1);
+            account.Transactions.Count().Should().Be(p0);
         }
 
     }

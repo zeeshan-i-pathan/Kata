@@ -2,7 +2,7 @@ Feature: Should be able to do Intrabank transfer
 
 @Intrabank
 Scenario: Able to transfer successfully
-    Given account details 
+    Given account details
         | Id | Balance | SortCode | AccountNum |
         | 1 | 2000 | 1 | 100 |
         | 2 | 1000 | 1 | 101 |
