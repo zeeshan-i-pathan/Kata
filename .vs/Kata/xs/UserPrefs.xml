@@ -1,6 +1,6 @@
-﻿<Properties StartupConfiguration="{D1C20587-404B-4C3C-A726-4C3CE52F3C48}|Default">
-  <MonoDevelop.Ide.ItemProperties.BusDriver.Test PreferredExecutionTarget="MonoDevelop.Default" />
+﻿<Properties StartupConfiguration="{9B92482C-8819-47D7-8C24-2D179481A8E2}|Default">
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.Shop FirstBuild="True" />
   <MonoDevelop.Ide.Workbench ActiveDocument="Banking.Test/CaseSteps.cs">
     <Files>
       <File FileName="Banking/VO/DepositRequest.cs" Line="4" Column="58" />
@@ -40,9 +40,9 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.ItemProperties.ShopTDD FirstBuild="True" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints />
   <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.Shop.Test PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
 </Properties>
