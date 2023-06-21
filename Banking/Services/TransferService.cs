@@ -1,4 +1,5 @@
 ﻿using System;
+using Banking.DAL;
 using Banking.Dto;
 using Banking.Models;
 using Banking.VO;
@@ -9,11 +10,13 @@ namespace Banking.Services
     {
         WithdrawalService withdrawalService;
         DepositService depositService;
+        IUnitOfWork unitOfWork;
 
-        public TransferService(WithdrawalService withdrawalService, DepositService depositService)
+        public TransferService(IUnitOfWork unitOfWork, WithdrawalService withdrawalService, DepositService depositService)
         {
             this.withdrawalService = withdrawalService;
             this.depositService = depositService;
+            this.unitOfWork = unitOfWork;
         }
 
         public void Process(TransferRequestVO Request)

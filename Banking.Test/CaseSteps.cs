@@ -39,7 +39,7 @@ namespace Banking.Test
         public void Whenrequestingtowithdraw(int args1)
         {
             RequestVO withdrawalRequest = new RequestVO(AccountId: 1, Amount: (uint)args1);
-            WithdrawalService withdrawalService = new WithdrawalService();
+            WithdrawalService withdrawalService = new WithdrawalService(new MockUnitOfWork());
             response = withdrawalService.TryTransaction(account, withdrawalRequest);
         }
 
@@ -59,7 +59,7 @@ namespace Banking.Test
         public void Whenrequestingtodeposit(uint args1)
         {
             RequestVO depositRequest = new RequestVO(AccountId: 1, Amount: args1);
-            response = new DepositService().TryTransaction(account, depositRequest);
+            response = new DepositService(new MockUnitOfWork()).TryTransaction(account, depositRequest);
         }
 
         [Then(@"deposit response should be ""(.*)""")]
@@ -94,7 +94,7 @@ namespace Banking.Test
                     sortCode: toAccount.SortCode,
                     reference: "",
                     accountNum: toAccount.AccountNum);
-                TransferService transferService = new TransferService(withdrawalService: new WithdrawalService(), depositService: new DepositService());
+                TransferService transferService = new TransferService(unitOfWork: new MockUnitOfWork(),withdrawalService: new WithdrawalService(new MockUnitOfWork()), depositService: new DepositService(new MockUnitOfWork()));
                 transferService.TryTransaction(fromAccount: fromAccount, toAccount: toAccount, transferRequest: transferRequest);
             }
         }
@@ -129,18 +129,30 @@ namespace Banking.Test
         [When(@"I withdraw (.*)")]
         public void WhenIWithdraw(int p0)
         {
-            //_scenarioContext.Pending();
+            RequestVO requestVO = new RequestVO(1, p0);
+            objectContainer.Resolve<WithdrawalService>().Process(requestVO);
         }
 
         [When(@"deposit (.*)")]
         public void WhenDeposit(int p0)
         {
-            //_scenarioContext.Pending();
+            RequestVO requestVO = new RequestVO(1, p0);
+            objectContainer.Resolve<DepositService>().Process(requestVO);
+
         }
 
         [When(@"I transfer (.*) from my account to account (.*)")]
-        public void WhenITransferFromMyAccountToAccount(int p0, int p1)
+        public async void WhenITransferFromMyAccountToAccount(int p0, uint p1)
         {
+            UnitOfWork unitOfWork = objectContainer.Resolve<UnitOfWork>();
+            Account toAccount = await unitOfWork.AccountRepository.GetByID(p1);
+            TransferRequestVO transferRequest = new TransferRequestVO(
+                    AccountId: 1,
+                    Amount: p0,
+                    sortCode: toAccount.SortCode,
+                    reference: "",
+                    accountNum: toAccount.AccountNum);
+            objectContainer.Resolve<TransferService>().Process(transferRequest);
             //_scenarioContext.Pending();
         }
 

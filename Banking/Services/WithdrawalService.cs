@@ -2,10 +2,19 @@
 using Banking.Models;
 using Banking.Dto;
 using Banking.VO;
+using Banking.DAL;
+
 namespace Banking.Services;
 
 public class WithdrawalService : ITransactionService<RequestVO>
 {
+    IUnitOfWork unitOfWork;
+    public WithdrawalService(IUnitOfWork unitOfWork)
+    {
+        this.unitOfWork = unitOfWork;
+    }
+
+
     public void Process(RequestVO Request)
     {
         throw new NotImplementedException();

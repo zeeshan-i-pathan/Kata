@@ -2,11 +2,18 @@
 using Banking.Dto;
 using Banking.Models;
 using Banking.VO;
+using Banking.DAL;
 
 namespace Banking.Services
 {
 	public class DepositService : ITransactionService<RequestVO>
 	{
+        IUnitOfWork unitOfWork;
+        public DepositService(IUnitOfWork unitOfWork)
+        {
+            this.unitOfWork = unitOfWork;
+        }
+        
         public void Process(RequestVO Request)
         {
             // Begin Transaction

@@ -1,6 +1,7 @@
 ﻿using System;
 using Banking.Context;
 using Banking.DAL;
+using Banking.Services;
 using Banking.Models;
 using BoDi;
 using Microsoft.EntityFrameworkCore;
@@ -53,6 +54,12 @@ namespace Banking.Test
             objectContainer.RegisterInstanceAs<BankingContext>(bankingContext);
             UnitOfWork unitOfWork = new UnitOfWork(bankingContext);
             objectContainer.RegisterInstanceAs<UnitOfWork>(unitOfWork);
+            WithdrawalService withdrawalService = new WithdrawalService(unitOfWork);
+            objectContainer
+                .RegisterInstanceAs<WithdrawalService>(withdrawalService);
+            DepositService depositService = new DepositService(unitOfWork);
+            objectContainer.RegisterInstanceAs<DepositService>(depositService);
+            objectContainer.RegisterInstanceAs<TransferService>(new TransferService(unitOfWork, withdrawalService: withdrawalService, depositService: depositService));
         }
 
         // [AfterScenario("FromDb")]
