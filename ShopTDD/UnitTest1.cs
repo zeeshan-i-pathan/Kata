@@ -43,19 +43,31 @@ public class UnitTest1
         cart.Add(new Product { Name = 'A', Price = 10 });
         cart.Add(new Product { Name = 'A', Price = 10 });
         cart.Add(new Product { Name = 'A', Price = 10 });
-        System.Console.WriteLine(cart.Total);
         cart.Total.Should().Be(25);
     }
+
+    [Fact]
     public void AddProductBToCart2Times()
     {
         Cart cart = new Cart();
 
         cart.Add(new Product { Name = 'B', Price = 20 });
         cart.Add(new Product { Name = 'B', Price = 20 });
-        System.Console.WriteLine(cart.Total);
         cart.Total.Should().Be(30);
     }
 
+    [Fact]
+    public void AddProductCToCart3Times()
+    {
+        Cart cart = new Cart();
+
+        cart.Add(new Product { Name = 'C', Price = 30 });
+        cart.Add(new Product { Name = 'C', Price = 30 });
+        cart.Add(new Product { Name = 'C', Price = 30 });
+        System.Console.WriteLine(cart.Total);
+        cart.Total.Should().Be(90);
+
+    }
 }
 
 
